@@ -17,6 +17,7 @@ import AdminTestimonialsPage from "@/routes/Admin.testimonials";
 import AdminHiringPartnersPage from "@/routes/Admin.hiring-partners";
 import AdminEnquiriesPage from "@/routes/Admin.enquiries";
 import AdminApplicantsPage from "@/routes/Admin.applicants";
+import AdminSignupPage from "@/routes/Admin.signup";
 
 import ApplicantDetailsPage from "@/routes/Admin.applicant.$applicantId";
 
@@ -43,6 +44,7 @@ export default function App() {
         <Route path="/admin" element={<AdminDashboardPage />} />
 
         <Route path="/admin/login" element={<AdminLoginPage />} />
+        <Route path="/admin/signup" element={<AdminSignupPage />} />
 
         <Route path="/admin/testimonials" element={<AdminTestimonialsPage />} />
 

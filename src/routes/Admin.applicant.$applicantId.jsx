@@ -4,6 +4,7 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
 import { api } from "@/lib/api";
+import { toast } from "sonner";
 
 import {
   ArrowLeft,
@@ -80,12 +81,17 @@ export default function ApplicantDetailsPage() {
 
     try {
       const res = await api.applicants.updateStatus(applicantId, status);
-
-      console.log("Status update response:", res);
+      if (res?.success) {
+        toast.success(res.message || "Status updated successfully!");
+      } else {
+        toast.error(
+          res?.message || "Failed to update status. Please try again.",
+        );
+      }
     } catch (err) {
       console.error("Failed to update status:", err);
 
-      alert("Failed to update status. Please try again.");
+      toast.error("Failed to update status. Please try again.");
     } finally {
       setUpdatingStatus(false);
     }

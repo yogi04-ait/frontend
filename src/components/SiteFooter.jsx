@@ -90,6 +90,16 @@ export function SiteFooter() {
                   +91 7428700214
                 </a>
               </div>
+              <div className="flex items-start gap-1">
+                <Phone className="mt-0.5 h-4 w-4 text-accent" />
+
+                <a
+                  href="tel:+917428700215"
+                  className="transition-colors hover:text-accent"
+                >
+                  +91 7428700215
+                </a>
+              </div>
             </li>
             <li className="flex items-start gap-2">
               <Mail className="mt-0.5 h-4 w-4 text-accent" />

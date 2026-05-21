@@ -19,6 +19,13 @@ const contacts = [
     href: "tel:+917428700214",
   },
   {
+    icon: Phone,
+    label: "Phone",
+    value: "+91 74287 00215",
+    href: "tel:+917428700215",
+  },
+
+  {
     icon: Mail,
     label: "Email",
     value: "Contactus@gurujijobconsultancy.in",

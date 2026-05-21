@@ -239,8 +239,8 @@ export default function ApplicantsPage() {
                         <input
                           type="date"
                           value={customEnd}
-                          max={today}
                           onChange={(e) => setCustomEnd(e.target.value)}
+                          max={today}
                           className="rounded-lg border border-border bg-background px-3 py-2 text-sm outline-none"
                         />
                       </div>

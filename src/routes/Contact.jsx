@@ -9,12 +9,6 @@ const contacts = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+91 92170 10815",
-    href: "tel:+919217010815",
-  },
-  {
-    icon: Phone,
-    label: "Phone",
     value: "+91 74287 00214",
     href: "tel:+917428700214",
   },

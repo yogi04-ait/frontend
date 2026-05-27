@@ -8,6 +8,7 @@ import {
   LifeBuoy,
   Award,
   Heart,
+  Eye,
 } from "lucide-react";
 import { Layout } from "@/components/Layout";
 import { PageHero } from "@/components/PageHero";
@@ -73,53 +74,40 @@ export default function AboutPage() {
 
       <section className="mx-auto max-w-7xl px-5 py-20 lg:px-8">
         <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
-          <div className="rounded-3xl border border-border bg-gradient-soft p-8 lg:p-10">
+          {/* Mission */}
+          <div className="rounded-3xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-md lg:p-10">
             <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
               <Target className="h-6 w-6" />
             </div>
-            <h2 className="mt-5 text-2xl font-bold sm:text-3xl">Our Mission</h2>
+
+            <h2 className="mt-5 text-2xl font-bold sm:text-3xl">Mission</h2>
+
             <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              To provide reliable, fast and personalized hiring solutions that
-              empower careers and strengthen organizations across India. We
-              believe a great match between a person and a role creates real,
-              lasting impact — for families, for teams, and for the country's
-              growth story.
-            </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Founded in Gurgaon and serving clients across Delhi NCR and
-              pan-India, we combine deep industry knowledge with a human-first
-              approach to recruitment.
+              Our mission is to bridge ambition with opportunity. For job
+              seekers, we provide guidance, skill alignment, and honest support
+              at every step — from resume to retirement. For employers, we
+              deliver not just candidates, but committed companions who fit the
+              role, the team, and the vision. We simplify hiring, humanize
+              careers, and ensure no one walks their professional journey alone.
             </p>
           </div>
-          <div className="rounded-3xl border border-border bg-card p-8 shadow-sm lg:p-10">
-            <h2 className="text-2xl font-bold sm:text-3xl">Who We Help</h2>
-            <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-              Our consultants work with people and organizations at every stage
-              — making sure each engagement gets the focus and expertise it
-              deserves.
+
+          {/* Vision */}
+          <div className="rounded-3xl border border-border bg-card p-8 shadow-sm transition-all duration-300 hover:shadow-md lg:p-10">
+            <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary text-primary-foreground">
+              <Eye className="h-6 w-6" />
+            </div>
+
+            <h2 className="mt-5 text-2xl font-bold sm:text-3xl">Vision</h2>
+
+            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+              To be the trusted companion for both talent and teams. We walk
+              with job seekers from confusion to career, and stand with
+              employers from vacancy to victory. At Guruji, we don't just match
+              resumes to roles — we build relationships that help people grow
+              and companies thrive. Because every great journey needs a
+              companion.
             </p>
-            <ul className="mt-5 space-y-3 text-base text-muted-foreground">
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{" "}
-                Freshers stepping into their first opportunity
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{" "}
-                Mid-level professionals seeking the next big move
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{" "}
-                Senior leaders looking for confidential, targeted searches
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{" "}
-                Small and medium businesses building strong founding teams
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />{" "}
-                Enterprises hiring at scale across multiple industries
-              </li>
-            </ul>
           </div>
         </div>
       </section>

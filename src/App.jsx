@@ -10,6 +10,7 @@ import ContactPage from "@/routes/Contact";
 import ServicesPage from "@/routes/Services";
 import IndustriesPage from "@/routes/Industries";
 import HiringPage from "@/routes/Hiring";
+import WhatsAppButton from "./components/ui/whatsAppButton";
 
 import AdminLoginPage from "@/routes/Admin.login";
 import AdminDashboardPage from "@/routes/Admin.index";
@@ -25,45 +26,51 @@ import JobDetailsPage from "@/routes/Jobs.$jobId";
 
 export default function App() {
   return (
-    <Routes>
-      <Route element={<RootLayout />}>
-        <Route path="/" element={<HomePage />} />
+    <>
+      <Routes>
+        <Route element={<RootLayout />}>
+          <Route path="/" element={<HomePage />} />
 
-        <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage />} />
 
-        <Route path="/contact" element={<ContactPage />} />
+          <Route path="/contact" element={<ContactPage />} />
 
-        <Route path="/services" element={<ServicesPage />} />
+          <Route path="/services" element={<ServicesPage />} />
 
-        <Route path="/industries" element={<IndustriesPage />} />
+          <Route path="/industries" element={<IndustriesPage />} />
 
-        <Route path="/hiring" element={<HiringPage />} />
+          <Route path="/hiring" element={<HiringPage />} />
 
-        <Route path="/jobs/:jobId" element={<JobDetailsPage />} />
+          <Route path="/jobs/:jobId" element={<JobDetailsPage />} />
 
-        <Route path="/admin" element={<AdminDashboardPage />} />
+          <Route path="/admin" element={<AdminDashboardPage />} />
 
-        <Route path="/admin/login" element={<AdminLoginPage />} />
-        <Route path="/admin/signup" element={<AdminSignupPage />} />
+          <Route path="/admin/login" element={<AdminLoginPage />} />
+          <Route path="/admin/signup" element={<AdminSignupPage />} />
 
-        <Route path="/admin/testimonials" element={<AdminTestimonialsPage />} />
+          <Route
+            path="/admin/testimonials"
+            element={<AdminTestimonialsPage />}
+          />
 
-        <Route
-          path="/admin/hiring-partners"
-          element={<AdminHiringPartnersPage />}
-        />
+          <Route
+            path="/admin/hiring-partners"
+            element={<AdminHiringPartnersPage />}
+          />
 
-        <Route path="/admin/enquiries" element={<AdminEnquiriesPage />} />
+          <Route path="/admin/enquiries" element={<AdminEnquiriesPage />} />
 
-        <Route path="/admin/applicants" element={<AdminApplicantsPage />} />
+          <Route path="/admin/applicants" element={<AdminApplicantsPage />} />
 
-        <Route
-          path="/admin/applicant/:applicantId"
-          element={<ApplicantDetailsPage />}
-        />
+          <Route
+            path="/admin/applicant/:applicantId"
+            element={<ApplicantDetailsPage />}
+          />
 
-        <Route path="*" element={<NotFoundComponent />} />
-      </Route>
-    </Routes>
+          <Route path="*" element={<NotFoundComponent />} />
+        </Route>
+      </Routes>
+      <WhatsAppButton />
+    </>
   );
 }

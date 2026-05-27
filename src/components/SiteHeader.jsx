@@ -2,6 +2,7 @@ import { useState, memo } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Briefcase } from "lucide-react";
 import { cn } from "@/lib/utils";
+import Logo from "../assets/LOGO.jpeg";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -44,11 +45,11 @@ export const SiteHeader = memo(function SiteHeader({
           aria-label="Guruji Job Consultancy — Home"
           onClick={() => setOpen(false)}
         >
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-hero shadow-elegant transition-transform group-hover:scale-105">
-            <Briefcase
-              className="h-5 w-5 text-primary-foreground"
-              strokeWidth={2.5}
-              aria-hidden="true"
+          <div className="flex h-36 w-36 items-center justify-center transition-transform group-hover:scale-105">
+            <img
+              src={Logo}
+              alt="Guruji Job Consultancy"
+              className="h-14 w-auto object-contain"
             />
           </div>
 

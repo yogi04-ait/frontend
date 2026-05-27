@@ -69,16 +69,7 @@ export function SiteFooter() {
           <h4 className="text-sm font-semibold text-foreground">Reach Us</h4>
           <ul className="mt-4 space-y-3 text-sm text-muted-foreground">
             <li className="flex flex-col gap-0.2">
-              <div className="flex items-start gap-1">
-                <Phone className="mt-0.1 h-4 w-4 text-accent" />
-
-                <a
-                  href="tel:+919217010815"
-                  className="transition-colors hover:text-accent"
-                >
-                  +91 9217010815
-                </a>
-              </div>
+              
 
               <div className="flex items-start gap-1">
                 <Phone className="mt-0.5 h-4 w-4 text-accent" />

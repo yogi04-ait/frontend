@@ -54,7 +54,7 @@ export const SiteHeader = memo(function SiteHeader({
           </div>
 
           <div className="flex flex-col leading-tight">
-            <span className="font-display text-base font-bold text-foreground">
+            <span className="font-display text-[clamp(1.25rem,1.6vw,2rem)] font-bold text-foreground">
               Guruji Job Consultancy
             </span>
           </div>

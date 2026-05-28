@@ -2,7 +2,7 @@ import { useState, memo } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, Briefcase } from "lucide-react";
 import { cn } from "@/lib/utils";
-import Logo from "../assets/LOGO.jpeg";
+import Logo from "../assets/LOGO.PNG";
 
 const navItems = [
   { to: "/", label: "Home" },
@@ -38,18 +38,18 @@ export const SiteHeader = memo(function SiteHeader({
       role="banner"
       className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/85 backdrop-blur-lg"
     >
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
+      <div className="mx-auto flex overflow-hidden h-18 max-w-7xl items-center justify-between px-5 py-3 lg:px-8">
         <Link
           to="/"
           className="group flex items-center gap-3"
           aria-label="Guruji Job Consultancy — Home"
           onClick={() => setOpen(false)}
         >
-          <div className="flex h-36 w-36 items-center justify-center transition-transform group-hover:scale-105">
+          <div className="flex h-36 w-36  items-center justify-center transition-transform group-hover:scale-105">
             <img
               src={Logo}
               alt="Guruji Job Consultancy"
-              className="h-14 w-auto object-contain"
+              className="h-20 w-auto object-contain"
             />
           </div>
 
